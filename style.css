@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+	font-family: sans-serif;
+
+}
+
+body{
+	background: #fff;
+	font-size: 14px; 
+}
+.header{
+	position: sticky;
+	top: 0;
+	background: #7B8B9D;
+	z-index: 100;
+}
+
+select {
+    width: 500px; /* Ширина списка в пикселах */
+   }
+
+select{
+	font-size: 16px;
+}*/
+
+nav {
+	margin-top: 15px;
+}
+.nav li{
+	display: inline-block;
+	list-style: none;
+	padding-left: 1%;
+
+
+}
+
+li:last-child{
+	width: 6%;
+	text-align: center;
+	font-weight: 900px;
+
+
+}
+
+ul{
+	margin-top: 0.2%;
+	/* background-color: rgb(123,139,157); */
+	
+
+}
+
+/* .L{
+	display:relative;
+	text-align: center;
+	justify-content: center;
+} */
+
+.nav a{
+	color: black;
+	text-decoration: none;
+	font-size: 31px;
+	font-weight: bolder;
+}
+a:hover{
+	background:#7E8EA1;
+	opacity: 0.9;
+    color: white;
+    transition: 0.5s;
+    border-radius: 7px;
+
+}
+.content h2{
+	margin-top: 3%;
+	text-align: center;
+
+}
+
+.ins h2{
+	margin-top: 3%;
+}
+
+.ins a{
+	text-decoration: none;
+	color: gray;
+}
+
+.ins a:hover{
+	color: white;
+}
+
+hr{
+	border: none; /* Убираем границу для браузера Firefox */
+    color: #7B8B9D; /* Цвет линии для остальных браузеров */
+    background-color: #7B8B9D; /* Цвет линии для браузера Firefox и Opera */
+    height: 10px; /* Толщина линии */
+}
+
+footer{
+	position: sticky;
+	font-size: 30px;
+	color: #768697; /* Фиксированное положение */
+	left: 0; 
+	bottom: 0; /* Левый нижний угол */
+    padding: 10px; /* Поля вокруг текста */
+    width: 100%; /* Ширина слоя */
+
+}
+
+
+.SLS h4{
+	padding-top: 2%;
+}
+
+.step{
+	font-weight: bolder;
+}
+
+
+#empty_formula1,#empty_formula2,#empty_formula3,#empty_formula4,#empty_formula5,#empty_formula6,#empty_formula7,#empty_formula8,#empty_formula9,#empty_formula10,#empty_formula11,#empty_formula12,#empty_formula13,#empty_formula14,#empty_formula15,#empty_formula16{
+	display: none;
+}
+
+#show,#show2,#show3,#show4,#show5,#show6,#show7,#show8,#show9,#show10,#show11,#show12,#show13,#show14,#show15,#show16{
+	display: none;
+	color: red;
+	font-weight: bolder;
+	
+}
+
+#res_formula1,#res_formula2,#res_formula3,#res_formula4,#res_formula5,#res_formula6,#res_formula7,#res_formula8,#res_formula9,#res_formula10,#res_formula11,#res_formula12,#res_formula13,#res_formula14,#res_formula15,#res_formula16,#res_formula17,#res_formula18{
+	font-weight: bolder;
+	
+}
+
+
+
+#copy{
+	color: red;
+	display: none;
+}
+
+
+
