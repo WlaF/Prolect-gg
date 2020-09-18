@@ -9,7 +9,8 @@
 </head>
 <body>
 <footer class="footer"> <!-- Початок підвалу -->
-	<p class="float-left">&copy;2020 рік, Олександр ЛАКТІОНОВ </p> 
+	<p class="float-left">&copy;2020 рік,
+	 Олександр ЛАКТІОНОВ </p> 
 
 	<p class="float-right"><?php echo $today = date("Y-m-d, H:i");?></p>
 </footer>
