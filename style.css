@@ -10,10 +10,7 @@ body{
 	font-size: 14px; 
 }
 .header{
-	position: sticky;
-	top: 0;
-	background: #7B8B9D;
-	z-index: 100;
+	font-size: 24px;
 }
 
 
