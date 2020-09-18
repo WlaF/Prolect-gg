@@ -31,11 +31,17 @@ include 'header.php';
 
    		</p>
          <br>
+
    		<p>
-   		<button id="but_formula9">Вирахувати потужність, яка витрачається на різання N, кВт</button>
-   		<button id="generate_formula9">Згенерувати формулу</button>
-   		<button  id="copyred_formula9" disabled="true" onclick="copyToClipboard9('#empty_formula9')">Скопіювати формулу</button><span id="show9">Скопійовано!</span>
-   	</p>
+			   <button id="but_formula9">Вирахувати потужність, яка витрачається на різання N, кВт</button>
+		   </p>
+   		<p>
+			   <button id="generate_formula9">Згенерувати формулу</button>
+		   </p>
+   		<p>
+			   <button  id="copyred_formula9" disabled="true" onclick="copyToClipboard9('#empty_formula9')">Скопіювати формулу</button><span id="show9">Скопійовано!</span>
+		   </p>
+
    	<p id="res_formula9">
    		<!-- $N=$M *$nd /975; -->
    	</p>
@@ -56,11 +62,17 @@ include 'header.php';
 
    		</p>
          <br>
+  
    		<p>
-   		<button id="but_formula10">Вирахувати достатність потужності електродвигуна головного привода, яка витрачається на різання N, кВт</button>
-   		<button id="generate_formula10">Згенерувати формулу</button>
-   		<button  id="copyred_formula10" disabled="true" onclick="copyToClipboard10('#empty_formula10')">Скопіювати формулу</button><span id="show10">Скопійовано!</span>
-   	</p>
+			   <button id="but_formula10">Вирахувати достатність потужності електродвигуна головного привода, яка витрачається на різання N, кВт</button>
+		   </p>
+   		<p>
+			   <button id="generate_formula10">Згенерувати формулу</button>
+		   </p>
+   		<p>
+			   <button  id="copyred_formula10" disabled="true" onclick="copyToClipboard10('#empty_formula10')">Скопіювати формулу</button><span id="show10">Скопійовано!</span>
+		   </p>
+  
 
    	<p id="res_formula10">
    		<!-- $Nshp=$Nd *0.8; -->

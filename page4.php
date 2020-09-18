@@ -91,11 +91,16 @@ include 'header.php';
    	</p>
     <br>
     <br>
-   	<p>
-   		<button id="but_formula5">Вирахувати швидкість головного руху різання, що допускається ріжучими властивостями свердла v, мм/хв</button>
-   		<button id="generate_formula5">Згенерувати формулу</button>
-   		<button  id="copyred_formula5" disabled="true" onclick="copyToClipboard5('#empty_formula5')">Скопіювати формулу</button><span id="show5">Скопійовано!</span>
-   	</p>
+   		<p>
+			   <button id="but_formula5">Вирахувати швидкість головного руху різання, що допускається ріжучими властивостями свердла v, мм/хв</button>
+		   </p>
+   		<p>
+			   <button id="generate_formula5">Згенерувати формулу</button>
+		   </p>
+   		<p>
+			   <button  id="copyred_formula5" disabled="true" onclick="copyToClipboard5('#empty_formula5')">Скопіювати формулу</button><span id="show5">Скопійовано!</span>
+		   </p>
+
    	<p id="res_formula5">
    		
    	</p>
@@ -120,11 +125,17 @@ include 'header.php';
    	</p>
     <br>
     <br>
-   	<p>
-   		<button id="but_formula6">Вирахувати частоту обертання шпинделя, що відповідає знайденій швидкості головного руху різання n, хв</button>
-   		<button id="generate_formula6">Згенерувати формулу</button>
-   		<button  id="copyred_formula6" disabled="true" onclick="copyToClipboard6('#empty_formula6')">Скопіювати формулу</button><span id="show6">Скопійовано!</span>
-   	</p>
+
+   		<p>
+			   <button id="but_formula6">Вирахувати частоту обертання шпинделя, що відповідає знайденій швидкості головного руху різання n, хв</button>
+		   </p>
+   		<p>
+			   <button id="generate_formula6">Згенерувати формулу</button>
+		   </p>
+   		<p>
+			   <button  id="copyred_formula6" disabled="true" onclick="copyToClipboard6('#empty_formula6')">Скопіювати формулу</button><span id="show6">Скопійовано!</span>
+		   </p>
+
    	<p id="res_formula6">
    		
    	</p>

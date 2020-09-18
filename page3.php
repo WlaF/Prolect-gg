@@ -69,11 +69,17 @@ include 'header.php';
 
    	</p>
     <br><br>
-   	<p>
-   		<button id="but_formula3">Вирахувати поправочний коефіцієнт, Kmv, на швидкість головного руху різання</button>
-   		<button id="generate_formula3">Згенерувати формулу</button>
-   		<button  id="copyred_formula3" disabled="true" onclick="copyToClipboard3('#empty_formula3')">Скопіювати формулу</button><span id="show3">Скопійовано!</span>
-   	</p>
+   
+   		<p>
+			   <button id="but_formula3">Вирахувати поправочний коефіцієнт, Kmv, на швидкість головного руху різання</button>
+		   </p>
+   		<p>
+			   <button id="generate_formula3">Згенерувати формулу</button>
+		   </p>
+   		<p>
+			   <button  id="copyred_formula3" disabled="true" onclick="copyToClipboard3('#empty_formula3')">Скопіювати формулу</button><span id="show3">Скопійовано!</span>
+		   </p>
+
    	<p id="res_formula3">
    		
    	</p>
@@ -129,11 +135,17 @@ include 'header.php';
 
    	</p>
     <br>
-   	<p>
-   		<button id="but_formula4">Вирахувати поправочний коефіцієнт, Kv, на швидкість головного руху різання</button>
-   		<button id="generate_formula4">Згенерувати формулу</button>
-   		<button  id="copyred_formula4" disabled="true" onclick="copyToClipboard4('#empty_formula4')">Скопіювати формулу</button><span id="show4">Скопійовано!</span>
-   	</p>
+   	
+   		<p>
+			   <button id="but_formula4">Вирахувати поправочний коефіцієнт, Kv, на швидкість головного руху різання</button>
+		   </p>
+   		<p>
+			   <button id="generate_formula4">Згенерувати формулу</button>
+		   </p>
+   		<p>
+			   <button  id="copyred_formula4" disabled="true" onclick="copyToClipboard4('#empty_formula4')">Скопіювати формулу</button><span id="show4">Скопійовано!</span>
+		   </p>
+   	
    	<p id="res_formula4">
    		
    	</p>

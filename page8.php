@@ -42,11 +42,17 @@ include 'header.php';
 
    	</p>
       <br><br>
-   	<p>
-   		<button id="but_formula13">Вирахувати розрахунковий струм навантаження для одного електродвигуна свердлильного верстата</button>
-   		<button id="generate_formula13">Згенерувати формулу</button>
-   		<button  id="copyred_formula13" disabled="true" onclick="copyToClipboard13('#empty_formula13')">Скопіювати формулу</button><span id="show13">Скопійовано!</span>
-   	</p>
+  
+   		<p>
+			   <button id="but_formula13">Вирахувати розрахунковий струм навантаження для одного електродвигуна свердлильного верстата</button>
+		   </p>
+   		<p>
+			   <button id="generate_formula13">Згенерувати формулу</button>
+		   </p>
+   		<p>
+			   <button  id="copyred_formula13" disabled="true" onclick="copyToClipboard13('#empty_formula13')">Скопіювати формулу</button><span id="show13">Скопійовано!</span>
+		   </p>
+   	
    	<p id="res_formula13">
    		
    	</p>
@@ -96,11 +102,17 @@ include 'header.php';
 
    	</p>
       <br><br>
-   	<p>
-   		<button id="but_formula14">Вирахувати допустиме струмове навантаження для вибору перерізу провідника</button>
-   		<button id="generate_formula14">Згенерувати формулу</button>
-   		<button  id="copyred_formula14" disabled="true" onclick="copyToClipboard14('#empty_formula14')">Скопіювати формулу</button><span id="show14">Скопійовано!</span>
-   	</p>
+
+   		<p>
+			   <button id="but_formula14">Вирахувати допустиме струмове навантаження для вибору перерізу провідника</button>
+		   </p>
+   		<p>
+			   <button id="generate_formula14">Згенерувати формулу</button>
+		   </p>
+   		<p>
+			   <button  id="copyred_formula14" disabled="true" onclick="copyToClipboard14('#empty_formula14')">Скопіювати формулу</button><span id="show14">Скопійовано!</span>
+		   </p>
+
    	<p id="res_formula14">
    		
    	</p>
@@ -124,11 +136,17 @@ include 'header.php';
 
    	</p>
       <br><br>
-   	<p>
-   		<button id="but_formula15">Вирахувати струм плавкої вставки, Іпік/2</button>
-   		<button id="generate_formula15">Згенерувати формулу</button>
-   		<button  id="copyred_formula15" disabled="true" onclick="copyToClipboard15('#empty_formula15')">Скопіювати формулу</button><span id="show15">Скопійовано!</span>
-   	</p>
+ 
+   		<p>
+			   <button id="but_formula15">Вирахувати струм плавкої вставки, Іпік/2</button>
+		   </p>
+   		<p>
+			   <button id="generate_formula15">Згенерувати формулу</button>
+		   </p>
+   		<p>
+			   <button  id="copyred_formula15" disabled="true" onclick="copyToClipboard15('#empty_formula15')">Скопіювати формулу</button><span id="show15">Скопійовано!</span>
+		   </p>
+ 
    	<p id="res_formula15">
    		
    	</p>
@@ -156,11 +174,17 @@ include 'header.php';
 
    	</p>
       <br><br>
-   	<p>
-   		<button id="but_formula16">Обрати автоматичний вимикач</button>
-   		<button id="generate_formula16">Згенерувати формулу</button>
-   		<button  id="copyred_formula16" disabled="true" onclick="copyToClipboard16('#empty_formula16')">Скопіювати формулу</button><span id="show16">Скопійовано!</span>
-   	</p>
+
+   		<p>
+			   <button id="but_formula16">Обрати автоматичний вимикач</button>
+		   </p>
+   		<p>
+			   <button id="generate_formula16">Згенерувати формулу</button>
+		   </p>
+   		<p>
+			   <button  id="copyred_formula16" disabled="true" onclick="copyToClipboard16('#empty_formula16')">Скопіювати формулу</button><span id="show16">Скопійовано!</span>
+		   </p>
+
    	<p id="res_formula16">
    		
    	</p>

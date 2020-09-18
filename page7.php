@@ -62,12 +62,17 @@ include 'header.php';
 
    		</p>
    		<br><br>
-   		<p>
-   			<button id="but_formula11">Вирахувати потужність електродвигуна приводу подачі верстата</button>
-   			<button id="generate_formula11">Згенерувати формулу</button>
-   			<button  id="copyred_formula11" disabled="true" onclick="copyToClipboard11('#empty_formula11')">Скопіювати формулу</button>
-   			<span id="show11">Скопійовано!</span>
-   		</p>
+  
+   			<p>
+				   <button id="but_formula11">Вирахувати потужність електродвигуна приводу подачі верстата</button>
+			   </p>
+   			<p>
+				   <button id="generate_formula11">Згенерувати формулу</button>
+			   </p>
+   			<p>
+				   <button  id="copyred_formula11" disabled="true" onclick="copyToClipboard11('#empty_formula11')">Скопіювати формулу</button><span id="show11">Скопійовано!</span>
+			   </p>
+   	
    		<p id="res_formula11">
    		
    		</p>
@@ -152,12 +157,18 @@ include 'header.php';
 
    		</p>
    		<br><br>
-   		<p>
-   			<button id="but_formula12">Вирахувати потужність електродвигуна насосу охолодження верстата</button>
-   			<button id="generate_formula12">Згенерувати формулу</button>
-   			<button  id="copyred_formula12" disabled="true" onclick="copyToClipboard12('#empty_formula12')">Скопіювати формулу</button>
-   			<span id="show12">Скопійовано!</span>
-   		</p>
+   		
+   			<p>
+				   <button id="but_formula12">Вирахувати потужність електродвигуна насосу охолодження верстата</button>
+			   </p>
+   			<p>
+				   <button id="generate_formula12">Згенерувати формулу</button>
+			   </p>
+   			<p>
+				   <button  id="copyred_formula12" disabled="true" onclick="copyToClipboard12('#empty_formula12')">Скопіювати формулу</button>
+				   <span id="show12">Скопійовано!</span>
+			   </p>
+
    		<p id="res_formula12">
    		
    		</p>

@@ -117,11 +117,17 @@ include 'header.php';
 
    		</p>
       <br><br>
-   		<p>
-   			<button id="but_formula7">Вирахувати дійсну швидкість головного руху різання nд, м/хв</button>
-   			<button id="generate_formula7">Згенерувати формулу</button>
-   			<button  id="copyred_formula7" disabled="true" onclick="copyToClipboard7('#empty_formula7')">Скопіювати формулу</button><span id="show7">Скопійовано!</span>
-   		</p>
+   
+   			<p>
+				   <button id="but_formula7">Вирахувати дійсну швидкість головного руху різання nд, м/хв</button>
+			   </p>
+   			<p>
+				   <button id="generate_formula7">Згенерувати формулу</button>
+			   </p>
+   			<p>
+				   <button  id="copyred_formula7" disabled="true" onclick="copyToClipboard7('#empty_formula7')">Скопіювати формулу</button><span id="show7">Скопійовано!</span>
+			   </p>
+   	
    		<p id="res_formula7">
    		
    		</p>
@@ -180,11 +186,17 @@ include 'header.php';
 
    	</p>
     <br><br>
-   	<p>
-   		<button id="but_formula8">Вирахувати крутний момент від сил опору різання при свердлінні М, Нм</button>
-   		<button id="generate_formula8">Згенерувати формулу</button>
-   		<button  id="copyred_formula8" disabled="true" onclick="copyToClipboard8('#empty_formula8')">Скопіювати формулу</button><span id="show8">Скопійовано!</span>
-   	</p>
+
+   		<p>
+			   <button id="but_formula8">Вирахувати крутний момент від сил опору різання при свердлінні М, Нм</button>
+		   </p>
+   		<p>
+			   <button id="generate_formula8">Згенерувати формулу</button>
+		   </p>
+   		<p>
+			   <button  id="copyred_formula8" disabled="true" onclick="copyToClipboard8('#empty_formula8')">Скопіювати формулу</button><span id="show8">Скопійовано!</span>
+		   </p>
+
    	<p id="res_formula8">
    		
    	</p>
