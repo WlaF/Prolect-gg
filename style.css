@@ -16,52 +16,21 @@ body{
 	z-index: 100;
 }
 
+
 select {
     width: 500px; /* Ширина списка в пикселах */
    }
 
 select{
 	font-size: 16px;
-}*/
+}
 
 nav {
 	margin-top: 15px;
 }
-.nav li{
-	display: inline-block;
-	list-style: none;
-	padding-left: 1%;
 
 
-}
 
-li:last-child{
-	width: 6%;
-	text-align: center;
-	font-weight: 900px;
-
-
-}
-
-ul{
-	margin-top: 0.2%;
-	/* background-color: rgb(123,139,157); */
-	
-
-}
-
-/* .L{
-	display:relative;
-	text-align: center;
-	justify-content: center;
-} */
-
-.nav a{
-	color: black;
-	text-decoration: none;
-	font-size: 31px;
-	font-weight: bolder;
-}
 a:hover{
 	background:#7E8EA1;
 	opacity: 0.9;
