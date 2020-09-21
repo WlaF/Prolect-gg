@@ -13,7 +13,10 @@ body{
 	font-size: 24px;
 }
 
-
+a{
+	text-decoration: none;
+	color: gray;
+}
 select {
     width: 500px; /* Ширина списка в пикселах */
    }
@@ -50,6 +53,12 @@ a:hover{
 	text-decoration: none;
 	color: gray;
 }
+
+.desc{
+	display: flex;
+	text-align: center;
+}
+
 
 .ins a:hover{
 	color: white;
