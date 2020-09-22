@@ -44,7 +44,7 @@
           				<a class="nav-link active text-center" href="page8.php">Сторінка 8</a>
         			</li>
 					<li>
-						<a class="nav-link active text-center" href="secret.php">Сторінка 9</a>
+						<a class="nav-link active text-center" href="page9.php">Сторінка 9</a>
 					</li>
       			</ul>
   </div>
