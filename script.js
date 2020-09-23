@@ -4,7 +4,7 @@
 
 
 
-	$('#generate_formula1').on('click', function(){
+	$('#generate_formula1').on('click', function generate_f1(){
 		let sigma = $('#sigma').val();
 		let np = $('#np').val();
 		if (sigma) {
@@ -21,7 +21,7 @@
 
 });
 
-	$('#but_formula1').on('click', function(){
+	$('#but_formula1').on('click', function calculate_f1(){
 		let sigma = $('#sigma').val();
 		let np = $('#np').val();
 
@@ -60,7 +60,7 @@ function copyToClipboard1(element) {
 
 
 
-	$('#generate_formula2').on('click', function(){
+	$('#generate_formula2').on('click', function generate_f2(){
 		let Sr = $('#Sr').val();
 		let Qp = $('#Qp').val();
 		let Yp = $('#Yp').val();
@@ -93,7 +93,7 @@ function copyToClipboard1(element) {
 
 });
 
-	$('#but_formula2').on('click', function(){
+	$('#but_formula2').on('click', function calculate_f2(){
 		let Sr = $('#Sr').val();
 		let Qp = $('#Qp').val();
 		let Yp = $('#Yp').val();
@@ -142,7 +142,7 @@ $('#generate_formula3').on('click', function(){
 		let Nv = $('#Nv').val();
 		let sigma = $('#sigma').val();
 		if (sigma) {
-		//Cm*( pow(75/$sigb, $nv));
+		//Cm*( pow(75/$sigma, $nv));
 		let formula_3 = Cm*(Math.pow((75/sigma),Nv)).toFixed(3);
 		let formula3_text = '&lt;math xmlns="http://www.w3.org/1998/Math/MathML" display="block"&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+Cm+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mo stretchy="false"&gt;(&lt;/mo&gt;&lt;mfrac&gt;&lt;mn&gt;75&lt;/mn&gt;&lt;mrow&gt;&lt;mi&gt;'+sigma+'&lt;/mi&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;msup&gt;&lt;mo stretchy="false"&gt;)&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+Nv+'&lt;/mi&gt;&lt;/mrow&gt;&lt;/msup&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;'+formula_3+'&lt;/mi&gt;&lt;/math&gt;';
 		$('#empty_formula3').html(formula3_text);
