@@ -116,7 +116,7 @@ include 'header.php';
 			   <button id="generate_formula1">Згенерувати формулу</button>
 		   </p>
    		<p>
-			   <button  id="copyred_formula1" disabled="true" onclick="copyToClipboard1('#empty_formula1')">Скопіювати формулу</button><span id="show">Скопійовано!</span>
+			   <button  id="copyred_formula1" disabled="true">Скопіювати формулу</button><span id="show">Скопійовано!</span>
 		   </p>
    	
    	<p id="res_formula1">

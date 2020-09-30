@@ -1,18 +1,9 @@
-
-
-	
-
-
-
-	$('#generate_formula1').on('click', function generate_f1(){
+$('#generate_formula1').on('click', function generate_f1(){
 		let sigma = $('#sigma').val();
 		let np = $('#np').val();
 		if (sigma) {
-		let formula_1 = Math.pow((sigma/75), np).toFixed(3);
-		let formula1_text = '&lt;math xmlns="http://www.w3.org/1998/Math/MathML" display="block"&gt;&lt;mo stretchy="false"&gt;(&lt;/mo&gt;&lt;mfrac&gt;&lt;mi&gt;'+sigma+'&lt;/mi&gt;&lt;mn&gt;75&lt;/mn&gt;&lt;/mfrac&gt;&lt;msup&gt;&lt;mo stretchy="false"&gt;)&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+np+'&lt;/mi&gt;&lt;/mrow&gt;&lt;/msup&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;'+formula_1+' &lt;/mi&gt;&lt;/math&gt;';
-		$('#empty_formula1').html(formula1_text);
-		$('#res_formula1').text("Згенеровано!");
-		 $('#copyred_formula1').prop('disabled', false);
+			let for1 = new f1(+sigma,+np);
+			for1.gen();
 		 }
 		 else{
 		 	$('#res_formula1').text("Введіть межу міцності матеріалу заготовки, сігма!");
@@ -20,7 +11,6 @@
 
 
 });
-
 	$('#but_formula1').on('click', function calculate_f1(){
 		let sigma = $('#sigma').val();
 		let np = $('#np').val();
@@ -29,53 +19,33 @@
 		if (sigma) {
 		
 
-		let formula_1 = Math.pow((sigma/75), np).toFixed(3);
-
-		$('#res_formula1').text(formula_1);
+			let for1 = new f1(+sigma,+np);
+			for1.calc();
 		}
 		 else{
 		 	$('#res_formula1').text("Введіть межу міцності матеріалу заготовки, сігма!");
 		 }
 });
-
-function copyToClipboard1(element) {
-
-     var temp = $("<input>");
-     $("body").append(temp);
-     $('#show').show().fadeOut( 1000 );
-     temp.val($(element).text()).select();
-     document.execCommand("copy");
-     temp.remove();
-     $('#copyred_formula1').prop('disabled', true);
-}
+$('#copyred_formula1').on('click', function copy(){
+	let for1 = new f1();
+	for1.copy();
+});
 
 
 
-
-
-
-
-
-
-
-
-
-	$('#generate_formula2').on('click', function generate_f2(){
-		let Sr = $('#Sr').val();
-		let Qp = $('#Qp').val();
-		let Yp = $('#Yp').val();
-		let D = $('#D').val();
-		let So = $('#So').val();
-		let Kr = $('#Kr').val();
+$('#generate_formula2').on('click', function generate_f1(){
+    let Sr = $('#Sr').val();
+    let Qp = $('#Qp').val();
+    let Yp = $('#Yp').val();
+    let D = $('#D').val();
+    let So = $('#So').val();
+    let Kr = $('#Kr').val();
 		if (D) {
 			if (So) {
 				if (Kr) {
-		//$P0=9.81*$Cp*(pow($D, $qp))*(pow($S0, $yp))*$Kp;
-		let formula_2 = (9.81*Sr*(Math.pow(D,Qp))*(Math.pow(So,Yp))*Kr).toFixed(3);
-		let formula2_text = '&lt;math xmlns="http://www.w3.org/1998/Math/MathML" display="block"&gt;&lt;mo stretchy="false"&gt;(&lt;/mo&gt;&lt;mn&gt;9.81&lt;/mn&gt;&lt;mo&gt;&#x22C5;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+Sr+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;msup&gt;&lt;mi&gt;'+D+'&lt;/mi&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+Qp+'&lt;/mi&gt;&lt;/mrow&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;msup&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+So+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+Yp+'&lt;/mi&gt;&lt;/mrow&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;mo stretchy="false"&gt;)&lt;/mo&gt;&lt;mo&gt;&#x22C5;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+Kr+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;'+formula_2+'&lt;/mi&gt;&lt;/math&gt;';
-		$('#empty_formula2').html(formula2_text);
-		$('#res_formula2').text("Згенеровано!");
-		 $('#copyred_formula2').prop('disabled', false);
+
+			let for2 = new f2(+Sr,+Qp,+Yp,+D,+So,+Kr);
+			for2.gen();
 		 }
 		 else{
 		 	$('#res_formula2').text("Введіть поправочний коефіцієнт на осьову складову сили різання!");
@@ -92,20 +62,23 @@ function copyToClipboard1(element) {
 
 
 });
-
-	$('#but_formula2').on('click', function calculate_f2(){
+	$('#but_formula2').on('click', function calculate_f1(){
 		let Sr = $('#Sr').val();
 		let Qp = $('#Qp').val();
 		let Yp = $('#Yp').val();
 		let D = $('#D').val();
 		let So = $('#So').val();
 		let Kr = $('#Kr').val();
-if (D) {
+
+
+		if (D) {
 			if (So) {
 				if (Kr) {
-		let formula_2 = (9.81*Sr*(Math.pow(D,Qp))*(Math.pow(So,Yp))*Kr).toFixed(3);
 
-		$('#res_formula2').text(formula_2);
+		
+
+			let for2 = new f2(+Sr,+Qp,+Yp,+D,+So,+Kr);
+			for2.calc();
 		 }
 		 else{
 		 	$('#res_formula2').text("Введіть поправочний коефіцієнт на осьову складову сили різання!");
@@ -119,72 +92,47 @@ if (D) {
 		else{
 		 	$('#res_formula2').text("Введіть діаметр ріжучого інструменту!");
 		 }
-		
+});
+$('#copyred_formula2').on('click', function copy(){
+	let for2 = new f2();
+	for2.copy();
 });
 
 
-function copyToClipboard2(element) {
-     var temp = $("<input>");
-     $("body").append(temp);
-     $('#show2').show().fadeOut( 1000 );
-     temp.val($(element).text()).select();
-     document.execCommand("copy");
-     temp.remove();
-     $('#copyred_formula2').prop('disabled', true);
+  $('#generate_formula3').on('click', function(){
+    let Cm = $('#Cm').val();
+    let Nv = $('#Nv').val();
+    let sigma = $('#sigma').val();
+    if (sigma) {
+        let for3 = new f3(+Cm,+Nv,+sigma);
+        for3.gen();
+     }
+     else{
+         $('#res_formula3').text("Введіть межу міцності матеріалу заготовки, сігма!");
+     }
+
+
+});
+
+$('#but_formula3').on('click', function(){
+    let Cm = $('#Cm').val();
+    let Nv = $('#Nv').val();
+    let sigma = $('#sigma').val();
+    if (sigma) {
+        let for3 = new f3(+Cm,+Nv,+sigma);
+        for3.calc();
+
+    $('#res_formula3').text(formula_3);
 }
-
-
-
-
-
-$('#generate_formula3').on('click', function(){
-		let Cm = $('#Cm').val();
-		let Nv = $('#Nv').val();
-		let sigma = $('#sigma').val();
-		if (sigma) {
-		//Cm*( pow(75/$sigma, $nv));
-		let formula_3 = Cm*(Math.pow((75/sigma),Nv)).toFixed(3);
-		let formula3_text = '&lt;math xmlns="http://www.w3.org/1998/Math/MathML" display="block"&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+Cm+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mo stretchy="false"&gt;(&lt;/mo&gt;&lt;mfrac&gt;&lt;mn&gt;75&lt;/mn&gt;&lt;mrow&gt;&lt;mi&gt;'+sigma+'&lt;/mi&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;msup&gt;&lt;mo stretchy="false"&gt;)&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+Nv+'&lt;/mi&gt;&lt;/mrow&gt;&lt;/msup&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;'+formula_3+'&lt;/mi&gt;&lt;/math&gt;';
-		$('#empty_formula3').html(formula3_text);
-		$('#res_formula3').text("Згенеровано!");
-		 $('#copyred_formula3').prop('disabled', false);
-		 }
-		 else{
-		 	$('#res_formula3').text("Введіть межу міцності матеріалу заготовки, сігма!");
-		 }
-
-
-});
-
-	$('#but_formula3').on('click', function(){
-		let Cm = $('#Cm').val();
-		let Nv = $('#Nv').val();
-		let sigma = $('#sigma').val();
-		if (sigma) {
-		let formula_3 = Cm*(Math.pow((75/sigma),Nv)).toFixed(3);
-
-		$('#res_formula3').text(formula_3);
-	}
-	else{
-		$('#res_formula3').text("Введіть межу міцності матеріалу заготовки, сігма!");
-	}
-});
-
-
-function copyToClipboard3(element) {
-     var temp = $("<input>");
-     $("body").append(temp);
-     $('#show3').show().fadeOut( 1000 );
-     temp.val($(element).text()).select();
-     document.execCommand("copy");
-     temp.remove();
-     $('#copyred_formula3').prop('disabled', true);
+else{
+    $('#res_formula3').text("Введіть межу міцності матеріалу заготовки, сігма!");
 }
+});
 
-
-
-
-
+$('#copyred_formula3').on('click', function copy(){
+	let for3 = new f3();
+	for3.copy();
+});
 
 
 $('#generate_formula4').on('click', function(){
@@ -192,12 +140,8 @@ $('#generate_formula4').on('click', function(){
 		let Klv = $('#Klv').val();
 		let Kmv = $('#Kmv').val();
 		if (Kmv) {
-		//Cm*( pow(75/$sigb, $nv));
-		let formula_4 = (Kuv*Klv*Kmv).toFixed(3);
-		let formula4_text = '&lt;math xmlns="http://www.w3.org/1998/Math/MathML" display="block"&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+Kuv+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+Klv+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+Kmv+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;'+formula_4+'&lt;/mi&gt;&lt;/math&gt;';
-		$('#empty_formula4').html(formula4_text);
-		$('#res_formula4').text("Згенеровано!");
-		 $('#copyred_formula4').prop('disabled', false);
+			let for4 = new f4(+Kuv,+Klv,+Kmv);
+			for4.gen();
 		 }
 		 else{
 		 	$('#res_formula4').text("Введіть поправочний коефіцієнт Kmv, на швидкість головного руху різання!");
@@ -211,9 +155,8 @@ $('#generate_formula4').on('click', function(){
 		let Klv = $('#Klv').val();
 		let Kmv = $('#Kmv').val();
 		if (Kmv) {
-		let formula_4 = (Kuv*Klv*Kmv).toFixed(3);
-
-		$('#res_formula4').text(formula_4);
+			let for4 = new f4(+Kuv,+Klv,+Kmv);
+			for4.calc();
 	}
 	else{
 		 	$('#res_formula4').text("Введіть поправочний коефіцієнт Kmv, на швидкість головного руху різання!");
@@ -221,15 +164,10 @@ $('#generate_formula4').on('click', function(){
 });
 
 
-function copyToClipboard4(element) {
-     var temp = $("<input>");
-     $("body").append(temp);
-     $('#show4').show().fadeOut( 1000 );
-     temp.val($(element).text()).select();
-     document.execCommand("copy");
-     temp.remove();
-     $('#copyred_formula4').prop('disabled', true);
-}
+$('#copyred_formula4').on('click', function copy(){
+	let for4 = new f4();
+	for4.copy();
+});
 
 
 
