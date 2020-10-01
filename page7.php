@@ -73,7 +73,7 @@
 				<button id="generate_formula11">Згенерувати формулу</button>
 			</p>
 			<p>
-				<button id="copyred_formula11" disabled="true" onclick="copyToClipboard11('#empty_formula11')">Скопіювати формулу</button><span id="show11">Скопійовано!</span>
+				<button id="copyred_formula11" disabled="true">Скопіювати формулу</button>
 			</p>
 
 			<p id="res_formula11">
@@ -169,8 +169,8 @@
 				<button id="generate_formula12">Згенерувати формулу</button>
 			</p>
 			<p>
-				<button id="copyred_formula12" disabled="true" onclick="copyToClipboard12('#empty_formula12')">Скопіювати формулу</button>
-				<span id="show12">Скопійовано!</span>
+				<button id="copyred_formula12" disabled="true">Скопіювати формулу</button>
+				
 			</p>
 
 			<p id="res_formula12">

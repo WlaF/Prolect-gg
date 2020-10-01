@@ -125,7 +125,7 @@ include 'header.php';
 				   <button id="generate_formula7">Згенерувати формулу</button>
 			   </p>
    			<p>
-				   <button  id="copyred_formula7" disabled="true" onclick="copyToClipboard7('#empty_formula7')">Скопіювати формулу</button><span id="show7">Скопійовано!</span>
+				   <button  id="copyred_formula7" disabled="true">Скопіювати формулу</button>
 			   </p>
    	
    		<p id="res_formula7">
@@ -194,7 +194,7 @@ include 'header.php';
 			   <button id="generate_formula8">Згенерувати формулу</button>
 		   </p>
    		<p>
-			   <button  id="copyred_formula8" disabled="true" onclick="copyToClipboard8('#empty_formula8')">Скопіювати формулу</button><span id="show8">Скопійовано!</span>
+			   <button  id="copyred_formula8" disabled="true">Скопіювати формулу</button>
 		   </p>
 
    	<p id="res_formula8">

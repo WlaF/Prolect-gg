@@ -116,7 +116,7 @@ include 'header.php';
 			   <button id="generate_formula1">Згенерувати формулу</button>
 		   </p>
    		<p>
-			   <button  id="copyred_formula1" disabled="true">Скопіювати формулу</button><span id="show">Скопійовано!</span>
+			   <button  id="copyred_formula1" disabled="true">Скопіювати формулу</button>
 		   </p>
    	
    	<p id="res_formula1">
@@ -183,7 +183,7 @@ include 'header.php';
    	<br>
    		<p><button id="but_formula2">Вирахувати осьову складову сили різання, Р0, Н</button></p>
    		<p><button id="generate_formula2">Згенерувати формулу</button></p>
-   		<p><button  id="copyred_formula2" disabled="true" onclick="copyToClipboard2('#empty_formula2')">Скопіювати формулу</button><span id="show2">Скопійовано!</span></p>
+   		<p><button  id="copyred_formula2" disabled="true">Скопіювати формулу</button></p>
    	
    	<p id="res_formula2">
    		

@@ -95,13 +95,6 @@ hr{
 	display: none;
 }
 
-#show,#show2,#show3,#show4,#show5,#show6,#show7,#show8,#show9,#show10,#show11,#show12,#show13,#show14,#show15,#show16{
-	display: none;
-	color: red;
-	font-weight: bolder;
-	
-}
-
 #res_formula1,#res_formula2,#res_formula3,#res_formula4,#res_formula5,#res_formula6,#res_formula7,#res_formula8,#res_formula9,#res_formula10,#res_formula11,#res_formula12,#res_formula13,#res_formula14,#res_formula15,#res_formula16,#res_formula17,#res_formula18{
 	font-weight: bolder;
 	

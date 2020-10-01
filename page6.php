@@ -39,7 +39,7 @@ include 'header.php';
 			   <button id="generate_formula9">Згенерувати формулу</button>
 		   </p>
    		<p>
-			   <button  id="copyred_formula9" disabled="true" onclick="copyToClipboard9('#empty_formula9')">Скопіювати формулу</button><span id="show9">Скопійовано!</span>
+			   <button  id="copyred_formula9" disabled="true">Скопіювати формулу</button>
 		   </p>
 
    	<p id="res_formula9">
@@ -70,12 +70,11 @@ include 'header.php';
 			   <button id="generate_formula10">Згенерувати формулу</button>
 		   </p>
    		<p>
-			   <button  id="copyred_formula10" disabled="true" onclick="copyToClipboard10('#empty_formula10')">Скопіювати формулу</button><span id="show10">Скопійовано!</span>
+			   <button  id="copyred_formula10" disabled="true">Скопіювати формулу</button>
 		   </p>
   
 
    	<p id="res_formula10">
-   		<!-- $Nshp=$Nd *0.8; -->
 	   </p>
 	</fieldset>
   </div>
