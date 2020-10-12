@@ -24,8 +24,8 @@ include 'header.php';
 			\pmb{\frac{{M⋅nd}}{975}}
 		$$
    	</p>
-		Крутний момент від сил опору різання при свердлінні М, Нм:<br><input  type="number" id="M">
-		<br><br>Дійсна швидкість головного руху різання nд, м/хв:<br><input  type="number" id="Nd">
+	   М,Нм = крутний момент від сил опору різання при свердлінн:<br><input  type="number" id="M">
+		<br><br>nд,м/хв = дійсна швидкість головного руху різання:<br><input  type="number" id="Nd">
 		<br>
 		<p id="empty_formula9">
 
@@ -43,7 +43,6 @@ include 'header.php';
 		   </p>
 
    	<p id="res_formula9">
-   		<!-- $N=$M *$nd /975; -->
    	</p>
 	</fieldset>
    <br>
@@ -55,7 +54,7 @@ include 'header.php';
 			\pmb{{Nd}⋅0.8}
 		$$
    	</p>
-	Потужність, використовувана для різання Nріз,кВт
+	   Nріз,кВт = потужність, використовувана для різання:
 	<br><input  type="number" id="Nd2">
 	<br>
 	<p id="empty_formula10">
