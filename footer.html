@@ -8,12 +8,7 @@
 	<title>Document</title>
 </head>
 <body>
-<footer class="footer"> <!-- Початок підвалу -->
-	<p class="float-left">&copy;2020 рік,
-	 Олександр ЛАКТІОНОВ </p> 
 
-	<p class="float-right"><?php echo $today = date("Y-m-d, H:i");?></p>
-</footer>
 
 <script
   src="https://code.jquery.com/jquery-3.5.1.js"
@@ -25,5 +20,26 @@
 	</script>
 	<script src="Classes.js"></script>
 	  <script src="script.js"></script>
+
+<script>
+	function clock() {
+		let d = new Date();
+		let day = d.getDate();
+		let hrs = d.getHours();
+		let min = d.getMinutes();
+		let year = d.getFullYear();
+		let month = d.getMonth();
+		let Month = month + 1;
+		$("#date").text(year + '-' + Month + '-' + day + ',' + hrs + ':' + min);
+	}
+	setInterval("clock()",0);
+</script>
+	  <footer class="footer"> <!-- Початок підвалу -->
+	<p class="float-left">&copy;2020 рік,
+	ВСП ППФК НТУ "ХПІ" </p> 
+
+	
+	<p class="float-right" id="date"></p>
+</footer>
 	</body>
 </html>
