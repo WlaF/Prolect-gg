@@ -6,11 +6,11 @@ class f1 {
 	}
 	calc(){
 		let formula_1 = Math.pow((this.sigma/75), this.np).toFixed(3);
-	    $('#res_formula1').text(formula_1);
+	    $('#res_formula1').text(String(formula_1).replace('.',','));
 	}
 	gen(){
 		let formula_1 = Math.pow((this.sigma/75), this.np).toFixed(3);
-		let formula1_text = '&lt;math xmlns="http://www.w3.org/1998/Math/MathML" display="block"&gt;&lt;mo stretchy="false"&gt;(&lt;/mo&gt;&lt;mfrac&gt;&lt;mi&gt;'+this.sigma+'&lt;/mi&gt;&lt;mn&gt;75&lt;/mn&gt;&lt;/mfrac&gt;&lt;msup&gt;&lt;mo stretchy="false"&gt;)&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+this.np+'&lt;/mi&gt;&lt;/mrow&gt;&lt;/msup&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;'+formula_1+' &lt;/mi&gt;&lt;/math&gt;';
+		let formula1_text = '&lt;math xmlns="http://www.w3.org/1998/Math/MathML" display="block"&gt;&lt;mo stretchy="false"&gt;(&lt;/mo&gt;&lt;mfrac&gt;&lt;mi&gt;'+String(this.sigma).replace('.',',')+'&lt;/mi&gt;&lt;mn&gt;75&lt;/mn&gt;&lt;/mfrac&gt;&lt;msup&gt;&lt;mo stretchy="false"&gt;)&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+String(this.np).replace('.',',')+'&lt;/mi&gt;&lt;/mrow&gt;&lt;/msup&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;'+formula_1.replace('.',',')+' &lt;/mi&gt;&lt;/math&gt;';
 		$('#empty_formula1').html(formula1_text);
 		$('#res_formula1').text("Згенеровано!");
 		 $('#copyred_formula1').prop('disabled', false);
@@ -38,11 +38,11 @@ class f2 {
 	}
 	calc(){
 		let formula_2 = (9.81*this.Sr*(Math.pow(this.D,this.Qp))*(Math.pow(this.So,this.Yp))*this.Kr).toFixed(3);
-	    $('#res_formula2').text(formula_2);
+	    $('#res_formula2').text(String(formula_2).replace('.',','));
 	}
 	gen(){
 		let formula_2 = (9.81*this.Sr*(Math.pow(this.D,this.Qp))*(Math.pow(this.So,this.Yp))*this.Kr).toFixed(3);
-		let formula2_text = '&lt;math xmlns="http://www.w3.org/1998/Math/MathML" display="block"&gt;&lt;mo stretchy="false"&gt;(&lt;/mo&gt;&lt;mn&gt;9.81&lt;/mn&gt;&lt;mo&gt;&#x22C5;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+this.Sr+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;msup&gt;&lt;mi&gt;'+this.D+'&lt;/mi&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+this.Qp+'&lt;/mi&gt;&lt;/mrow&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;msup&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+this.So+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+this.Yp+'&lt;/mi&gt;&lt;/mrow&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;mo stretchy="false"&gt;)&lt;/mo&gt;&lt;mo&gt;&#x22C5;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+this.Kr+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;'+formula_2+'&lt;/mi&gt;&lt;/math&gt;';
+		let formula2_text = '&lt;math xmlns="http://www.w3.org/1998/Math/MathML" display="block"&gt;&lt;mo stretchy="false"&gt;(&lt;/mo&gt;&lt;mn&gt;9,81&lt;/mn&gt;&lt;mo&gt;&#x22C5;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+String(this.Sr).replace('.',',')+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;msup&gt;&lt;mi&gt;'+String(this.D).replace('.',',')+'&lt;/mi&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+String(this.Qp).replace('.',',')+'&lt;/mi&gt;&lt;/mrow&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;msup&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+String(this.So).replace('.',',')+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+String(this.Yp).replace('.',',')+'&lt;/mi&gt;&lt;/mrow&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;mo stretchy="false"&gt;)&lt;/mo&gt;&lt;mo&gt;&#x22C5;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+String(this.Kr).replace('.',',')+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;'+String(formula_2).replace('.',',')+'&lt;/mi&gt;&lt;/math&gt;';
 		$('#empty_formula2').html(formula2_text);
 		$('#res_formula2').text("Згенеровано!");
 		 $('#copyred_formula2').prop('disabled', false);
@@ -68,11 +68,11 @@ class f2 {
 	}
 	calc(){
         let formula_3 = this.Cm*(Math.pow((75/this.sigma),this.Nv)).toFixed(3);
-	    $('#res_formula3').text(formula_3);
+	    $('#res_formula3').text(String(formula_3).replace('.',','));
 	}
 	gen(){
 		let formula_3 = this.Cm*(Math.pow((75/this.sigma),this.Nv)).toFixed(3);
-		let formula3_text = '&lt;math xmlns="http://www.w3.org/1998/Math/MathML" display="block"&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+this.Cm+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mo stretchy="false"&gt;(&lt;/mo&gt;&lt;mfrac&gt;&lt;mn&gt;75&lt;/mn&gt;&lt;mrow&gt;&lt;mi&gt;'+this.sigma+'&lt;/mi&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;msup&gt;&lt;mo stretchy="false"&gt;)&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+this.Nv+'&lt;/mi&gt;&lt;/mrow&gt;&lt;/msup&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;'+formula_3+'&lt;/mi&gt;&lt;/math&gt;';
+		let formula3_text = '&lt;math xmlns="http://www.w3.org/1998/Math/MathML" display="block"&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+String(this.Cm).replace('.',',')+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mo stretchy="false"&gt;(&lt;/mo&gt;&lt;mfrac&gt;&lt;mn&gt;75&lt;/mn&gt;&lt;mrow&gt;&lt;mi&gt;'+String(this.sigma).replace('.',',')+'&lt;/mi&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;msup&gt;&lt;mo stretchy="false"&gt;)&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+String(this.Nv).replace('.',',')+'&lt;/mi&gt;&lt;/mrow&gt;&lt;/msup&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;'+String(formula_3).replace('.',',')+'&lt;/mi&gt;&lt;/math&gt;';
 		$('#empty_formula3').html(formula3_text);
         $('#res_formula3').text("Згенеровано!");
          $('#copyred_formula3').prop('disabled', false);
@@ -98,11 +98,11 @@ class f2 {
 	}
 	calc(){
 		let formula_4 = (this.Kuv*this.Klv*this.Kmv).toFixed(3);
-	    $('#res_formula4').text(formula_4);
+	    $('#res_formula4').text(String(formula_4).replace('.',','));
 	}
 	gen(){
 		let formula_4 = (this.Kuv*this.Klv*this.Kmv).toFixed(3);
-		let formula4_text = '&lt;math xmlns="http://www.w3.org/1998/Math/MathML" display="block"&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+this.Kuv+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+this.Klv+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+this.Kmv+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;'+formula_4+'&lt;/mi&gt;&lt;/math&gt;';
+		let formula4_text = '&lt;math xmlns="http://www.w3.org/1998/Math/MathML" display="block"&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+String(this.Kuv).replace('.',',')+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+String(this.Klv).replace('.',',')+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+String(this.Kmv).replace('.',',')+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;'+String(formula_4).replace('.',',')+'&lt;/mi&gt;&lt;/math&gt;';
 		$('#empty_formula4').html(formula4_text);
         $('#res_formula4').text("Згенеровано!");
          $('#copyred_formula4').prop('disabled', false);
@@ -138,11 +138,11 @@ class f2 {
 	}
 	calc(){
 		let formula_5 = (((this.Cv*(Math.pow(this.D,this.Qv)))/((Math.pow(this.T,this.Mv))*((Math.pow(this.So,this.Yv)))))*this.Kv).toFixed(3);
-	    $('#res_formula5').text(formula_5);
+	    $('#res_formula5').text(String(formula_5).replace('.',','));
 	}
 	gen(){
 		let formula_5 = (((this.Cv*(Math.pow(this.D,this.Qv)))/((Math.pow(this.T,this.Mv))*((Math.pow(this.So,this.Yv)))))*this.Kv).toFixed(3);
-		let formula5_text = '&lt;math xmlns="http://www.w3.org/1998/Math/MathML" display="block"&gt;&lt;mrow&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+this.Cv+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;msup&gt;&lt;mi&gt;'+this.D+'&lt;/mi&gt;&lt;mi&gt;'+this.Qv+'&lt;/mi&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;msup&gt;&lt;mi&gt;'+this.T+'&lt;/mi&gt;&lt;mi&gt;'+this.Mv+'&lt;/mi&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;msup&gt;&lt;mi&gt;'+this.So+'&lt;/mi&gt;&lt;mi&gt;'+this.Yv+'&lt;/mi&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mi&gt;'+this.Kv+'&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;'+formula_5+'&lt;/mi&gt;&lt;/math&gt;';
+		let formula5_text = '&lt;math xmlns="http://www.w3.org/1998/Math/MathML" display="block"&gt;&lt;mrow&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+String(this.Cv).replace('.',',')+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;msup&gt;&lt;mi&gt;'+String(this.D).replace('.',',')+'&lt;/mi&gt;&lt;mi&gt;'+String(this.Qv).replace('.',',')+'&lt;/mi&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;msup&gt;&lt;mi&gt;'+String(this.T).replace('.',',')+'&lt;/mi&gt;&lt;mi&gt;'+String(this.Mv).replace('.',',')+'&lt;/mi&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;msup&gt;&lt;mi&gt;'+String(this.So).replace('.',',')+'&lt;/mi&gt;&lt;mi&gt;'+String(this.Yv).replace('.',',')+'&lt;/mi&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mi&gt;'+String(this.Kv).replace('.',',')+'&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;'+String(formula_5).replace('.',',')+'&lt;/mi&gt;&lt;/math&gt;';
 		$('#empty_formula5').html(formula5_text);
         $('#res_formula5').text("Згенеровано!");
          $('#copyred_formula5').prop('disabled', false);
@@ -173,11 +173,11 @@ class f2 {
 	}
 	calc(){
 		let formula_6 = ((this.V*1000)/(3.14*this.D2)).toFixed(3);
-	    $('#res_formula6').text(formula_6);
+	    $('#res_formula6').text(String(formula_6).replace('.',','));
 	}
 	gen(){
 		let formula_6 = ((this.V*1000)/(3.14*this.D2)).toFixed(3);
-		let formula6_text = '&lt;math xmlns="http://www.w3.org/1998/Math/MathML" display="block"&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;mn&gt;1000&lt;/mn&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mi&gt;'+this.V+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;mn&gt;3.14&lt;/mn&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mi&gt;'+this.D2+'&lt;/mi&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;'+formula_6+'&lt;/mi&gt;&lt;/math&gt;';
+		let formula6_text = '&lt;math xmlns="http://www.w3.org/1998/Math/MathML" display="block"&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;mn&gt;1000&lt;/mn&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mi&gt;'+String(this.V).replace('.',',')+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;mn&gt;3,14&lt;/mn&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mi&gt;'+String(this.D2).replace('.',',')+'&lt;/mi&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;'+String(formula_6).replace('.',',')+'&lt;/mi&gt;&lt;/math&gt;';
 		$('#empty_formula6').html(formula6_text);
         $('#res_formula6').text("Згенеровано!");
          $('#copyred_formula6').prop('disabled', false);
@@ -203,11 +203,11 @@ class f2 {
 	}
 	calc(){
 		let formula_7 = ((3.14*this.D*this.Nd)/1000).toFixed(3);
-	    $('#res_formula7').text(formula_7);
+	    $('#res_formula7').text(String(formula_7).replace('.',','));
 	}
 	gen(){
 		let formula_7 = ((3.14*this.D*this.Nd)/1000).toFixed(3);
-		let formula7_text = '&lt;math xmlns="http://www.w3.org/1998/Math/MathML" display="block"&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;mn&gt;3.14&lt;/mn&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mi&gt;'+this.D+'&lt;/mi&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mi&gt;'+this.Nd+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mn&gt;1000&lt;/mn&gt;&lt;/mfrac&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;'+formula_7+'&lt;/mi&gt;&lt;/math&gt;';
+		let formula7_text = '&lt;math xmlns="http://www.w3.org/1998/Math/MathML" display="block"&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;mn&gt;3,14&lt;/mn&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mi&gt;'+String(this.D).replace('.',',')+'&lt;/mi&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mi&gt;'+String(this.Nd).replace('.',',')+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mn&gt;1000&lt;/mn&gt;&lt;/mfrac&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;'+String(formula_7).replace('.',',')+'&lt;/mi&gt;&lt;/math&gt;';
 		$('#empty_formula7').html(formula7_text);
         $('#res_formula7').text("Згенеровано!");
          $('#copyred_formula7').prop('disabled', false);
@@ -237,11 +237,11 @@ class f2 {
 	}
 	calc(){
 		let formula_8 = (((9.81*this.Cm*(Math.pow(this.D2,this.Qm)))*(Math.pow(this.So,this.Ym)))*(this.Kr*0.101973)).toFixed(3);
-	    $('#res_formula8').text(formula_8);
+	    $('#res_formula8').text(String(formula_8).replace('.',','));
 	}
 	gen(){
 		let formula_8 = (((9.81*this.Cm*(Math.pow(this.D2,this.Qm)))*(Math.pow(this.So,this.Ym)))*(this.Kr*0.101973)).toFixed(3);
-		let formula8_text = '&lt;math xmlns="http://www.w3.org/1998/Math/MathML" display="block"&gt;&lt;mo stretchy="false"&gt;(&lt;/mo&gt;&lt;mn&gt;9.81&lt;/mn&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mi&gt;'+this.Cm+'&lt;/mi&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;msup&gt;&lt;mi&gt;'+this.D2+'&lt;/mi&gt;&lt;mi&gt;'+this.Qm+'&lt;/mi&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;msup&gt;&lt;mi&gt;'+this.So+'&lt;/mi&gt;&lt;mi&gt;'+this.Ym+'&lt;/mi&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;mo stretchy="false"&gt;)&lt;/mo&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mo stretchy="false"&gt;(&lt;/mo&gt;&lt;mi&gt;'+this.Kr+'&lt;/mi&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mn&gt;0.101973&lt;/mn&gt;&lt;mo stretchy="false"&gt;)&lt;/mo&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;'+formula_8+'&lt;/mi&gt;&lt;/math&gt;';
+		let formula8_text = '&lt;math xmlns="http://www.w3.org/1998/Math/MathML" display="block"&gt;&lt;mo stretchy="false"&gt;(&lt;/mo&gt;&lt;mn&gt;9,81&lt;/mn&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mi&gt;'+String(this.Cm).replace('.',',')+'&lt;/mi&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;msup&gt;&lt;mi&gt;'+String(this.D2).replace('.',',')+'&lt;/mi&gt;&lt;mi&gt;'+String(this.Qm).replace('.',',')+'&lt;/mi&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;msup&gt;&lt;mi&gt;'+String(this.So).replace('.',',')+'&lt;/mi&gt;&lt;mi&gt;'+String(this.Ym).replace('.',',')+'&lt;/mi&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;mo stretchy="false"&gt;)&lt;/mo&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mo stretchy="false"&gt;(&lt;/mo&gt;&lt;mi&gt;'+String(this.Kr).replace('.',',')+'&lt;/mi&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mn&gt;0,101973&lt;/mn&gt;&lt;mo stretchy="false"&gt;)&lt;/mo&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;'+String(formula_8).replace('.',',')+'&lt;/mi&gt;&lt;/math&gt;';
 		$('#empty_formula8').html(formula8_text);
         $('#res_formula8').text("Згенеровано!");
          $('#copyred_formula8').prop('disabled', false);
@@ -267,11 +267,11 @@ class f2 {
 	}
 	calc(){
 		let formula_9 = ((this.M*this.Nd)/975).toFixed(3);
-	    $('#res_formula9').text(formula_9);
+	    $('#res_formula9').text(String(formula_9).replace('.',','));
 	}
 	gen(){
 		let formula_9 = ((this.M*this.Nd)/975).toFixed(3);
-		let formula9_text = '&lt;math xmlns="http://www.w3.org/1998/Math/MathML" display="block"&gt;&lt;mfrac&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+this.M+'&lt;/mi&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mi&gt;'+this.Nd+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mn&gt;975&lt;/mn&gt;&lt;/mfrac&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;'+formula_9+'&lt;/mi&gt;&lt;/math&gt;';
+		let formula9_text = '&lt;math xmlns="http://www.w3.org/1998/Math/MathML" display="block"&gt;&lt;mfrac&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+String(this.M).replace('.',',')+'&lt;/mi&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mi&gt;'+String(this.Nd).replace('.',',')+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mn&gt;975&lt;/mn&gt;&lt;/mfrac&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;'+String(formula_9).replace('.',',')+'&lt;/mi&gt;&lt;/math&gt;';
 		$('#empty_formula9').html(formula9_text);
         $('#res_formula9').text("Згенеровано!");
          $('#copyred_formula9').prop('disabled', false);
@@ -301,11 +301,11 @@ class f2 {
 	}
 	calc(){
 		let formula_10 = ((this.Nd2*0.8)).toFixed(3);
-	    $('#res_formula10').text(formula_10);
+	    $('#res_formula10').text(String(formula_10).replace('.',','));
 	}
 	gen(){
 		let formula_10 = ((this.Nd2*0.8)).toFixed(3);
-		let formula10_text = '&lt;math xmlns="http://www.w3.org/1998/Math/MathML" display="block"&gt;&lt;mi&gt;'+this.Nd2+'&lt;/mi&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mn&gt;0.8&lt;/mn&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;'+formula_10+'&lt;/mi&gt;&lt;/math&gt;';
+		let formula10_text = '&lt;math xmlns="http://www.w3.org/1998/Math/MathML" display="block"&gt;&lt;mi&gt;'+String(this.Nd2).replace('.',',')+'&lt;/mi&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mn&gt;0,8&lt;/mn&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;'+String(formula_10).replace('.',',')+'&lt;/mi&gt;&lt;/math&gt;';
 		$('#empty_formula10').html(formula10_text);
         $('#res_formula10').text("Згенеровано!");
          $('#copyred_formula10').prop('disabled', false);
@@ -333,7 +333,7 @@ class f2 {
 	}
 	calc(){
 		let formula_11 = ((this.Vper*this.Ft)/(14.4*0.001)).toFixed(2);
-	    $('#res_formula11').text(formula_11);
+	    $('#res_formula11').text(String(formula_11).replace('.',','));
 	}
 	choice(){
 		let formula_11 = ((this.Vper*this.Ft)/(14.4*0.001)).toFixed(2);
@@ -371,7 +371,7 @@ class f2 {
 	}
 	gen(){
 		let formula_11 = ((this.Vper*this.Ft)/(14.4*0.001)).toFixed(2);
-		let formula11_text = '&lt;math xmlns="http://www.w3.org/1998/Math/MathML" display="block"&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+this.Vper+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+this.Ft+'&lt;/mi&gt;&lt;/mrow&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mn&gt;14.4&lt;/mn&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mn&gt;0.001&lt;/mn&gt;&lt;/mrow&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;'+formula_11+'&lt;/mi&gt;&lt;/math&gt;';
+		let formula11_text = '&lt;math xmlns="http://www.w3.org/1998/Math/MathML" display="block"&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+String(this.Vper).replace('.',',')+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+String(this.Ft).replace('.',',')+'&lt;/mi&gt;&lt;/mrow&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mn&gt;14,4&lt;/mn&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mn&gt;0,001&lt;/mn&gt;&lt;/mrow&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;'+String(formula_11).replace('.',',')+'&lt;/mi&gt;&lt;/math&gt;';
 		$('#empty_formula11').html(formula11_text);
         $('#res_formula11').text("Згенеровано!");
          $('#copyred_formula11').prop('disabled', false);
@@ -399,12 +399,10 @@ class f2 {
 	}
 	calc(){
 		let formula_12 = ((1.1*this.Gama*this.Q*this.H)/(3600*1000*this.KKD*this.M)).toFixed(4);
-	    $('#res_formula12').text(formula_12);
+	    $('#res_formula12').text(String(formula_12).replace('.',','));
 	}
 	choice(){
 		let formula_12 = ((1.1*this.Gama*this.Q*this.H)/(3600*1000*this.KKD*this.M)).toFixed(4);
-		
-		$('#res_formula12').text(formula_12);
 
 	if (formula_12>0 && formula_12<=0.18) {
 	  $('#res_formula12_text').text('Електродвигун АІР63А6, Р=0.18 кВт, n= 1000 об/хв, Ін=0.8 А, ККД=55.5%, cos f=0.64');
@@ -427,7 +425,7 @@ class f2 {
 	}
 	gen(){
 		let formula_12 = ((1.1*this.Gama*this.Q*this.H)/(3600*1000*this.KKD*this.M)).toFixed(4);
-		let formula12_text = '&lt;math xmlns="http://www.w3.org/1998/Math/MathML" display="block"&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;mn&gt;1.1&lt;/mn&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+this.Gama+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+this.Q+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+this.H+'&lt;/mi&gt;&lt;/mrow&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mn&gt;3600&lt;/mn&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mn&gt;1000&lt;/mn&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+this.KKD+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+this.M+'&lt;/mi&gt;&lt;/mrow&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;'+formula_12+'&lt;/mi&gt;&lt;/math&gt;';
+		let formula12_text = '&lt;math xmlns="http://www.w3.org/1998/Math/MathML" display="block"&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;mn&gt;1,1&lt;/mn&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+String(this.Gama).replace('.',',')+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+String(this.Q).replace('.',',')+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+String(this.H).replace('.',',')+'&lt;/mi&gt;&lt;/mrow&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mn&gt;3600&lt;/mn&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mn&gt;1000&lt;/mn&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+String(this.KKD).replace('.',',')+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;!-- ∗ --&gt;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+String(this.M).replace('.',',')+'&lt;/mi&gt;&lt;/mrow&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;'+String(formula_12).replace('.',',')+'&lt;/mi&gt;&lt;/math&gt;';
 		$('#empty_formula12').html(formula12_text);
         $('#res_formula12').text("Згенеровано!");
          $('#copyred_formula12').prop('disabled', false);
@@ -454,12 +452,12 @@ class f2 {
 	}
 	calc(){
 		let formula_13 = ((this.Pn*1000)/((Math.pow(3,(1/2))*0.38)*this.KKD*this.Cosf)).toFixed(3);
-	    $('#res_formula13').text(formula_13);
+	    $('#res_formula13').text(String(formula_13).replace('.',','));
 	}
 	
 	gen(){
 		let formula_13 = ((this.Pn*1000)/((Math.pow(3,(1/2))*0.38)*this.KKD*this.Cosf)).toFixed(3);
-		let formula13_text = '&lt;math xmlns="http://www.w3.org/1998/Math/MathML" display="block"&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+this.Pn+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;/mo&gt;&lt;mn&gt;1000&lt;/mn&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;msqrt&gt;&lt;mn&gt;3&lt;/mn&gt;&lt;/msqrt&gt;&lt;mo&gt;&#x22C5;&lt;/mo&gt;&lt;mn&gt;0.38&lt;/mn&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+this.KKD+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;/mo&gt;&lt;mi&gt;'+this.Cosf+'&lt;/mi&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;/mrow&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;'+formula_13+'&lt;/mi&gt;&lt;/math&gt;';
+		let formula13_text = '&lt;math xmlns="http://www.w3.org/1998/Math/MathML" display="block"&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+String(this.Pn).replace('.',',')+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;/mo&gt;&lt;mn&gt;1000&lt;/mn&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;msqrt&gt;&lt;mn&gt;3&lt;/mn&gt;&lt;/msqrt&gt;&lt;mo&gt;&#x22C5;&lt;/mo&gt;&lt;mn&gt;0,38&lt;/mn&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+String(this.KKD).replace('.',',')+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mo&gt;&#x22C5;&lt;/mo&gt;&lt;mi&gt;'+String(this.Cosf).replace('.',',')+'&lt;/mi&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;/mrow&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;'+String(formula_13).replace('.',',')+'&lt;/mi&gt;&lt;/math&gt;';
 		$('#empty_formula13').html(formula13_text);
         $('#res_formula13').text("Згенеровано!");
          $('#copyred_formula13').prop('disabled', false);
@@ -487,12 +485,10 @@ class f2 {
 	}
 	calc(){
 		let formula_14 = ((this.Ip/this.K1)*this.K2).toFixed(3);
-	    $('#res_formula14').text(formula_14);
+	    $('#res_formula14').text(String(formula_14).replace('.',','));
 	}
 	choice(){
 		let formula_14 = ((this.Ip/this.K1)*this.K2).toFixed(3);
-		
-		$('#res_formula14').text(formula_14);
 
 		if (formula_14>0 && formula_14<=19) {
 			$('#res_formula14_text').text('Переріз струмопровідної жили 1,5 мм2, cтрум 19 А для трьохжильних проводів і кабелів з мідними жилами');
@@ -508,7 +504,7 @@ class f2 {
 	}
 	gen(){
 		let formula_14 = ((this.Ip/this.K1)*this.K2).toFixed(3);
-		let formula14_text = '&lt;math xmlns="http://www.w3.org/1998/Math/MathML" display="block"&gt;&lt;mfrac&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+this.Ip+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+this.K1+'&lt;/mi&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;mo&gt;&#x22C5;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+this.K2+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;'+formula_14+'&lt;/mi&gt;&lt;/math&gt;';
+		let formula14_text = '&lt;math xmlns="http://www.w3.org/1998/Math/MathML" display="block"&gt;&lt;mfrac&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+String(this.Ip).replace('.',',')+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+String(this.K1).replace('.',',')+'&lt;/mi&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;mo&gt;&#x22C5;&lt;/mo&gt;&lt;mrow class="MJX-TeXAtom-ORD"&gt;&lt;mi&gt;'+String(this.K2).replace('.',',')+'&lt;/mi&gt;&lt;/mrow&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;'+String(formula_14).replace('.',',')+'&lt;/mi&gt;&lt;/math&gt;';
 		$('#empty_formula14').html(formula14_text);
         $('#res_formula14').text("Згенеровано!");
          $('#copyred_formula14').prop('disabled', false);
@@ -536,12 +532,10 @@ class f2 {
 	}
 	calc(){
 		let formula_15 = (this.IR*3.5).toFixed(3);
-	    $('#res_formula15').text(formula_15);
+	    $('#res_formula15').text(String(formula_15).replace('.',','));
 	}
 	choice(){
 		let formula_15 = (this.IR*3.5).toFixed(3);
-		
-		$('#res_formula15').text(formula_15);
 
 		if (formula_15>0 && formula_15<=6) {
 			$('#res_formula15_text').text('Плавкий запобіжник NT0, Ін=6 А');
@@ -602,7 +596,7 @@ class f2 {
 	}
 	gen(){
 		let formula_15 = (this.IR*3.5).toFixed(3);
-		let formula15_text = '&lt;math xmlns="http://www.w3.org/1998/Math/MathML" display="block"&gt;&lt;mi&gt;'+this.IR+'&lt;/mi&gt;&lt;mo&gt;&#x22C5;&lt;/mo&gt;&lt;mn&gt;3.5&lt;/mn&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt; ' +formula_15+'&lt;/mi&gt;&lt;/math&gt;';
+		let formula15_text = '&lt;math xmlns="http://www.w3.org/1998/Math/MathML" display="block"&gt;&lt;mi&gt;'+String(this.IR).replace('.',',')+'&lt;/mi&gt;&lt;mo&gt;&#x22C5;&lt;/mo&gt;&lt;mn&gt;3,5&lt;/mn&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;'+String(formula_15).replace('.',',')+'&lt;/mi&gt;&lt;/math&gt;';
 		$('#empty_formula15').html(formula15_text);
         $('#res_formula15').text("Згенеровано!");
          $('#copyred_formula15').prop('disabled', false);
@@ -630,12 +624,10 @@ class f2 {
 	}
 	calc(){
 		let formula_16 = (this.PN/380).toFixed(3);
-	    $('#res_formula16').text(formula_16);
+	    $('#res_formula16').text(String(formula_16).replace('.',','));
 	}
 	choice(){
 		let formula_16 = (this.PN/380).toFixed(3);
-		
-		$('#res_formula16').text(formula_16);
 
 		if (formula_16>0.63 && formula_16<=1) {
 			$('#res_formula16_text').text('АВЗД 2000/3-1, Ір=0.63-1 А');
@@ -692,7 +684,7 @@ class f2 {
 	}
 	gen(){
 		let formula_16 = (this.PN/380).toFixed(3);
-		let formula16_text = '&lt;math xmlns="http://www.w3.org/1998/Math/MathML" display="block"&gt;&lt;mfrac&gt;&lt;mi&gt;'+this.PN+'&lt;/mi&gt;&lt;mn&gt;380&lt;/mn&gt;&lt;/mfrac&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;'+formula_16+'&lt;/mi&gt;&lt;/math&gt;';
+		let formula16_text = '&lt;math xmlns="http://www.w3.org/1998/Math/MathML" display="block"&gt;&lt;mfrac&gt;&lt;mi&gt;'+String(this.PN).replace('.',',')+'&lt;/mi&gt;&lt;mn&gt;380&lt;/mn&gt;&lt;/mfrac&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;'+String(formula_16).replace('.',',')+'&lt;/mi&gt;&lt;/math&gt;';
 		$('#empty_formula16').html(formula16_text);
         $('#res_formula16').text("Згенеровано!");
          $('#copyred_formula16').prop('disabled', false);
